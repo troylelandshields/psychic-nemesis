@@ -1,37 +1,123 @@
-/*
-Syntax error: Invalid CSS after "$blurbColor: blue": expected selector or at-rule, was ".blurb{"
-        on line 3 of style.scss
+.hero {
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1300px; }
 
-1: $blurbColor: blue
-2: 
-3: .blurb{
-4: 	p{
-5: 
-6: 	}
-7: 
-8: 	ul{
+.title {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  color: white;
+  font-size: 140px; }
 
-Backtrace:
-style.scss:3
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1147:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:28:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"$blurbColor: blue\": expected selector or at-rule, was \".blurb{\"\A         on line 3 of style.scss\A \A 1: $blurbColor: blue\A 2: \A 3: .blurb{\A 4: 	p{\A 5: \A 6: 	}\A 7: \A 8: 	ul{"; }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px; }
+
+  h2 {
+    font-size: 30px; }
+
+  body {
+    font-size: 12px; } }
+.content {
+  font-family: sans-serif;
+  background-color: black; }
+
+.nav ul li {
+  padding: 14px;
+  margin-left: 5px;
+  border-radius: 25px;
+  display: inline-block;
+  background-color: #66CCFF; }
+.nav li:hover {
+  background-color: #003366;
+  transition: 1s; }
+.nav ul {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+  float: right; }
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif; }
+.nav a:link {
+  color: white; }
+.nav a:hover {
+  color: red;
+  transition: 1s; }
+.nav a:active {
+  color: yellow; }
+
+.infoHeader {
+  margin-left: 50px; }
+  .infoHeader img {
+    float: left;
+    max-height: 60px;
+    margin-right: 10px; }
+  .infoHeader h2 {
+    font-size: 60px;
+    color: white; }
+
+.center {
+  width: 90%;
+  margin: 0 auto; }
+
+.sectIntro {
+  color: #374857; }
+  .sectIntro a {
+    color: #374857; }
+
+.blurb {
+  float: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 1%;
+  padding: 10px;
+  color: #E6E6E6;
+  background-color: #374857;
+  border-radius: 25px; }
+  .blurb ul {
+    list-style: none; }
+  .blurb h3 {
+    text-align: right;
+    font-size: 25px; }
+  .blurb a {
+    color: white; }
+  .blurb a:hover {
+    color: #CFF9FF; }
+
+.thirds {
+  width: 30%;
+  min-width: 220px; }
+
+.half {
+  width: 45%;
+  min-width: 340px; }
+
+section {
+  float: none;
+  clear: both;
+  margin: -3;
+  overflow: hidden;
+  background-color: #374857;
+  transition: 2s; }
+  section section:hover {
+    background-color: #6A8DAB;
+    transition: 2s; }
+
+.instruction {
+  padding: 15px;
+  width: 95%;
+  color: white; }
+  .instruction a {
+    color: white; }
+  .instruction a:hover {
+    color: #CFF9FF; }
+
+.instruction:hover {
+  background-color: #6A8DAB;
+  transition: 2s; }
+
+code {
+  color: black; }
