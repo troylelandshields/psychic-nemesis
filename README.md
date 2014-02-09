@@ -1,7 +1,7 @@
 psychic-nemesis
 ===============
 
-WebDev assignment 1
+JavaScript assignment
 
-Viewable at shldz.us/psychic-nemesis
+Viewable at shldz.us/psychic-nemesis (note that only Ruby.html has the timer)
 Github: https://github.com/troylelandshields/psychic-nemesis
