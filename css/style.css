@@ -121,3 +121,53 @@ section {
 
 code {
   color: black; }
+
+.prompt {
+  background-color: black;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  right: 30%; }
+  .prompt p {
+    color: white;
+    margin-left: 50px; }
+  .prompt .btn {
+    color: white;
+    display: inline-block;
+    min-width: 90px;
+    min-height: 40px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+    border: solid;
+    border-color: black;
+    cursor: pointer; }
+  .prompt .leaveBtn {
+    background-color: maroon;
+    margin-left: 25%; }
+  .prompt .stayBtn {
+    background-color: #3D663D; }
+  .prompt .btn:hover {
+    border: solid;
+    border-color: white;
+    transition: .5s; }
+
+#container {
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  z-index: 1002; }
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .70;
+  filter: alpha(opacity=80); }
