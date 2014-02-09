@@ -171,3 +171,8 @@ code {
   -moz-opacity: 0.8;
   opacity: .70;
   filter: alpha(opacity=80); }
+
+.footer {
+  color: white;
+  margin-top: 20px;
+  text-align: center; }
