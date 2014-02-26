@@ -9,6 +9,7 @@ function createHeader(title){
 	hero.src = 'css/img/hero.jpg'
 
 	var titleH1 = document.createElement('h1')
+	titleH1.id = 'pagetitle'
 	titleH1.className = 'title'
 	titleH1.innerHTML = title
 
@@ -20,6 +21,17 @@ function createHeader(title){
 
 	var body = document.getElementById('content')
 	body.appendChild(header)
+}
+
+function createFooter(){
+	var footer = document.createElement('div')
+	footer.id = 'footer'
+	footer.className = 'footer'
+
+	footer.innerHTML= 'Thanks for visiting!'
+
+	var body = document.getElementById('content')
+	body.appendChild(footer)
 }
 
 function createNav(){

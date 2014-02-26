@@ -226,5 +226,20 @@ code{
 	text-align: center;
 }
 
+.highlight{
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	transition:.5s;
+}
+
+.read{
+	opacity: .5;
+	transition:.5s;
+}
+
+#draggable{
+	z-index: 999;
+}
 
 

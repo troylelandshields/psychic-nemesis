@@ -2,17 +2,20 @@
 <html>
 	<head>
 		<link rel=stylesheet type="text/css" href="css/style.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	</head>
 	<body id="content" class="content">
 		<div id="overlay"></div>
 		<script src="js/header.js"></script>
-		<script>createHeader("Ruby");</script>
+		<script>createHeader("Ruby")</script>
 
 		<script src="js/obnoxious.js"></script>
 
 		<section class="info">
 			<section id="introduction">
-				<div class="infoHeader"><img src="css/img/ruby.png"/><h2>Meet Ruby</h2></div>
+				<div class="infoHeader"><img id="draggable" title="Hey! You can drag me around the page if you're bored!" class="ui-widget-content" src="css/img/ruby.png"/><h2 id='title'>Meet Ruby</h2></div>
 				<p class="sectIntro center">
 					Ruby was designed and developed starting in the mid-1990s by Yukihiro 'Matz' Matsumoto. Matz created Ruby to be productive and fun compared with other programming languages. He felt that the design of a programming language should revolve first around the human and second around the computer. Ruby is an <strong>object-oriented, dynamic, general-purpose, programming language</strong> that has a wide user base and a growing following.
 				</p>
@@ -116,5 +119,7 @@
 				</div>
 			</section>
 		</section>
+		<script>createFooter()</script>
+		<script src="./js/jquery_assignment.js"></script>
 	</body>
 </html>
